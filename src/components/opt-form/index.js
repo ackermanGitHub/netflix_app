@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 import React from "react";
-import { Container, Input, Buttom, Text, Break } from './styles/opt-form';
+import { Container, Input, Button, Text, Break } from './styles/opt-form';
 
 export default function OptForm({ children, ...restProps}) {
     return <Container { ...restProps }>{ children }</Container>
@@ -8,11 +8,11 @@ export default function OptForm({ children, ...restProps}) {
 OptForm.Input = function OptFormInput({ ...restProps }) {
     return <Input { ...restProps }/>
 }
-OptForm.Buttom = function OptFormButtom({ children, ...restProps }) {
+OptForm.Button = function OptFormButton({ children, ...restProps }) {
     return (
-        <Buttom { ...restProps }>
+        <Button { ...restProps }>
             { children } <img src="/images/icons/chevron-right.png" alt="Try Now" />
-        </Buttom>
+        </Button>
     )
 }
 OptForm.Text = function OptFormText({ children, ...restProps }) {

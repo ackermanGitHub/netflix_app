@@ -22,7 +22,7 @@ export const Input = styled.input`
     box-sizing: border-box;
 `; 
 
-export const Buttom = styled.button`
+export const Button = styled.button`
     display: flex;
     align-items: center;
     height: 70px;
