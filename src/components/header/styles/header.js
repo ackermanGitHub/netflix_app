@@ -17,7 +17,7 @@ export const Container = styled.div`
     align-items: center;
 
     a {
-        dispay: flex;
+        display: flex;
     }
 
     @media (max-width: 1000px) {
