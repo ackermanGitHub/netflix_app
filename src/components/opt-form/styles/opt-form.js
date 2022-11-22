@@ -39,7 +39,7 @@ export const Button = styled.button`
     }
 
     @media (max-width: 1000px) {
-        height: 50;
+        height: 50px;
         font-size: 16px;
         margin-top: 20px;
         font-weight: bold;

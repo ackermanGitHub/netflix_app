@@ -7,18 +7,18 @@ import * as ROUTES from "../constants/routes";
 
 export default function Signin() {
     const history = useHistory();
-    const [emailAdress, setEmailAdress] = useState("");
+    const [emailAddress, setEmailAddress] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
-    const isInvalid = password === '' || emailAdress === '';
+    const isInvalid = password === '' || emailAddress === '';
     const handleSignIn = (event) => {
         event.preventDefault();
 
-        if (emailAdress === "julio.sergio2709@gmail.com" || password === "3rWx7Hf8") {
+        if (emailAddress === "email.fake@gmail.com" || password === "password") {
             history(ROUTES.BROWSE);
         } else {
-            setEmailAdress("");
+            setEmailAddress("");
             setPassword("");
             setError("Usuario o contraseña incorrecto");
         }
@@ -33,8 +33,8 @@ export default function Signin() {
                     <Form.Base onSubmit={handleSignIn} method="POST">
                         <Form.Input 
                             placeholder="Email adress"
-                            value={emailAdress}
-                            onChange={({target}) => setEmailAdress(target.value)}
+                            value={emailAddress}
+                            onChange={({target}) => setEmailAddress(target.value)}
                         />
                         <Form.Input 
                             placeholder="Password"
